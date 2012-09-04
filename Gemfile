@@ -1,14 +1,19 @@
 source "http://rubygems.org"
-# Add dependencies required to use your gem here.
-# Example:
-#   gem "activesupport", ">= 2.3.5"
 
-# Add dependencies to develop your gem here.
-# Include everything needed to run rake, tests, features, etc.
+gem 'activesupport'
+gem 'heimdallr'
+gem 'active_model_serializers'
+
 group :development do
-  gem "shoulda", ">= 0"
   gem "rdoc", "~> 3.12"
-  gem "bundler", "~> 1.0.0"
+  gem 'pry'
+  gem 'pry-doc'
+  gem 'pry-remote'
+  gem 'pry-nav'
+  gem 'pry-stack_explorer'
   gem "jeweler", "~> 1.8.3"
-  gem "rcov", ">= 0"
+  gem 'delayed_job_active_record'
+  gem 'activerecord'
+  gem 'sqlite3'
+  gem 'timecop'
 end
